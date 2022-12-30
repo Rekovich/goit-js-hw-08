@@ -6,12 +6,10 @@ import SimpleLightbox from 'simplelightbox';
 // Додатковий імпорт стилів
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
-console.log(galleryItems);
-
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
 
-console.log(galleryItems);
+// console.log(galleryItems);
 
 const galleryItem = document.querySelector('.gallery');
 
@@ -33,7 +31,6 @@ function createGalleryItems(items) {
   return markup;
 }
 
-console.log(galleryItems);
 galleryItem.insertAdjacentHTML('afterbegin', createGalleryItems(galleryItems));
 galleryItem.insertAdjacentHTML('beforeend', createGalleryItems(galleryItems));
 
